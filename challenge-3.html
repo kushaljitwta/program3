@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>challenge-3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 18px;
+    }
+
+    header {
+      margin: 0;
+    }
+    .main {
+      position: relative;
+      margin-left: 1%;
+    }
+
+    .main img {
+      margin-left: 3%;
+      height: 300px;
+      width: auto;
+    }
+  #demo {
+position: absolute;
+  margin-left:60%;
+padding-bottom:250px;
+  transform: translate(-50%, -50%);
+  }
+
+    footer {
+      background: grey;
+    }
+    footer p {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#home">Home</a> |
+    <a href="#places">Places</a> |
+    <a href="#gallery">Gallery</a> |
+    <a href="#search">Search</a> |
+    <a href="#aboutus">AboutUs</a>|
+   
+  </header>
+  <br>
+  <section class="main">
+    <h1>
+      <B>Fast and Furious 7</B>
+    </h1>
+    <br><br>
+    <img src="https://ultimateactionmovies.com/wp-content/uploads/2020/05/Furious-7.jpg" alt="F&F7">
+
+
+
+<p id="demo"></p>
+
+
+
+    <br>
+    <p>by <U><a href="#">1JT18IS030 - KUSHAL</a></U> </p>
+    <br>
+    <p>
+      Dominic and his crew thought they'd left the criminal mercenary life behind. They'd defeated international terrorist Owen Shaw and went their separate ways. But now, Shaw's brother, Deckard Shaw, is out killing the crew one by one for revenge. Worse, a Somalian terrorist called Jakarde and a shady government official called "Mr. Nobody" are both competing to steal a computer terrorism program called "God's Eye," that can turn any technological device into a weapon. Torretto must reconvene with his team to stop Shaw and retrieve the God's Eye program while caught in a power struggle between the terrorist and the United States government.
+    </p>
+    <br>
+    <p><i>Year</i> : 2021</p>
+    <p><i>Date</i> : 21th May </p>
+    <br>
+    <br>
+    <h2>Reviews</h2>
+    <br>
+    <p style="font-weight:bold; font-size:20px"> Terrific </p>
+    <table>
+      <tr>
+        <td> KUSH </td>
+        <td> ⭐⭐⭐⭐ </td>
+      </tr>
+    </table><br>
+    <p>A Fitting  Tribute To Paul Walker😟 </p>
+    <br>
+    <hr>
+    <br>
+
+    <p style="font-weight:bold; font-size:20px"> Amazing </p>
+    <table>
+      <tr>
+        <td> ABHI </td>
+        <td> ⭐⭐⭐⭐⭐ </td>
+      </tr>
+    </table><br>
+    <p>"They say to live in the hearts of those we leave behind is not to die, but he put you in this grave, so now I'll do the same to him" this broke me up😭</p>
+    <br>
+    <hr><br>
+
+    <p style="font-weight:bold; font-size:20px">A Memorable One Last Ride</p>
+    <table>
+      <tr>
+        <td> DJ </td>
+        <td> ⭐⭐⭐⭐⭐ </td>
+      </tr>
+    </table><br>
+    <p>Miss You Paul😭,You Were A Legend </p>
+  </section>
+  <br>
+  <section class="ending">
+    <a href="#home">Home</a> |
+    <a href="#places">Places</a> |
+    <a href="#gallery">Gallery</a> |
+    <a href="#search">Search</a> |
+    <a href="#aboutus">AboutUs</a> |
+    
+  </section>
+
+  <footer>
+    <p><i>Copyright &#169 2021 KUSHAL</i></p>
+  </footer>
+  <script>
+var var1 = setInterval(inTimer, 500);
+var fs = 5; //font size
+var ids = document.getElementById("demo");
+function inTimer()
+{
+ids.innerHTML = 'Dom  Toretto(Vin Diesel)';
+ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+fs += 5;
+if (fs >= 50)
+{
+clearInterval(var1); //paused
+var2 = setInterval(deTimer, 500);
+
+}
+}
+function deTimer() //fs = 50px
+{
+fs -= 5;
+ids.innerHTML = 'Brian O-Conner(Paul Walker)';
+ids.setAttribute('style', "font-size: " + fs + "px; color:blue");
+if (fs == 15)
+{
+clearInterval(var2); //paused
+var1 = setInterval(inTimer, 500);
+}
+}
+</script>
+</body>
+
+</html>
